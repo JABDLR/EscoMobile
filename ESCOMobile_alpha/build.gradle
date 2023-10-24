@@ -1,0 +1,58 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlinVersion = '1.9.10'
+    ext.dokkaVersion = '0.9.18'
+
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+
+    dependencies {
+
+        classpath 'com.android.tools.build:gradle:8.1.2'
+        //classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.10"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+
+        //Jorge Angreego:
+        def nav_version = "2.5.3"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
+
+
+        // CRASHLYTICS
+        // De momento se tiene que mantener 4.2.0 por esto https://github.com/WhatsApp/stickers/issues/518
+        classpath 'com.google.gms:google-services:4.4.0'
+        // Requerido por Crashlytics
+        // Dokka
+        classpath "org.jetbrains.dokka:dokka-gradle-plugin:$dokkaVersion"
+        // Navigation Safe Args
+        classpath 'android.arch.navigation:navigation-safe-args-gradle-plugin:1.0.0'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.9'
+    }
+
+
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url 'https://maven.google.com/'
+            }
+        maven { url "https://plugins.gradle.org/m2/" }
+    }
+}
+
+
+
+tasks.register('clean', Delete) {
+    delete rootProject.buildDir
+}
+

@@ -1,0 +1,97 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryLight</item>
+    </style>
+    
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.Splash" parent="Theme.AppCompat.NoActionBar">
+        <!--<item name="android:windowBackground">@drawable/splash_background</item>-->
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- estilo para el progress bar -->
+    <style name="NewDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+    <!-- Estilos para fastscroll reddit -->
+    <style name="Widget.FastScrollSample.FastScroller" parent="Widget.IndicatorFastScroll.FastScroller">
+        <item name="iconColor">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="Widget.FastScrollSample.FastScroller.Floating">
+        <item name="iconColor">@color/amber_4</item>
+        <item name="android:textColor">@color/amber_4</item>
+        <item name="android:background">@drawable/fastscroller_floating_background</item>
+        <item name="android:elevation">3dp</item>
+    </style>
+
+    <style name="Widget.FastScrollSample.FastScrollerThumb" parent="Widget.IndicatorFastScroll.FastScrollerThumb" />
+
+    <style name="Widget.FastScrollSample.FastScrollerThumb.Colorful">
+        <item name="thumbColor">@color/amber_4</item>
+    </style>
+    
+    <!-- Rating bar -->
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/amber_4</item>
+        <item name="colorControlActivated">@color/amber_1</item>
+    </style>
+
+    <!--&lt;!&ndash; SearchView &ndash;&gt;-->
+    <!--<style name="SearchView">-->
+        <!--<item name="floatingSearch_backgroundColor">@color/colorAccent</item>-->
+        <!--<item name="floatingSearch_viewSearchInputTextColor">@color/colorPrimary</item>-->
+        <!--<item name="floatingSearch_viewSuggestionItemTextColor">@color/black</item>-->
+        <!--<item name="floatingSearch_hintTextColor">@color/colorPrimary</item>-->
+        <!--<item name="floatingSearch_dividerColor">@color/amber_4</item>-->
+        <!--<item name="floatingSearch_clearBtnColor">@color/colorPrimary</item>-->
+        <!--<item name="floatingSearch_leftActionColor">@color/colorPrimary</item>-->
+        <!--<item name="floatingSearch_menuItemIconColor">@color/light_gray</item>-->
+        <!--<item name="floatingSearch_suggestionRightIconColor">@color/light_gray</item>-->
+        <!--<item name="floatingSearch_actionMenuOverflowColor">@color/light_gray</item>-->
+		<!--<item name="android:textCursorDrawable">@drawable/cursor_color</item>-->
+		<!--<item name="android:autoCompleteTextViewStyle">@drawable/cursor_color</item>-->
+		<!--<item name="android:colorControlActivated">@color/colorPrimary</item>-->
+		<!--<item name="android:colorAccent">@color/colorPrimary</item>-->
+		<!--<item name="android:color">@color/colorPrimary</item>-->
+    <!--</style>-->
+
+    
+    <!-- Date picker dialog -->
+    <style name="datePicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorSecundary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="headerItem">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+</resources>

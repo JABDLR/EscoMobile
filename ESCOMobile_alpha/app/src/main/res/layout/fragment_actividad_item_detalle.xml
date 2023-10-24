@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="actividad"
+            type="mx.ipn.escom.escomobile.app.repositorio.actividad.Actividad" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/amber_1"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/actividad_nombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:paddingTop="10dp"
+            android:text="@string/hint_evento_nombre"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/actividad_descripcion"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/actividad_descripcion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/white_transparent"
+            android:ems="10"
+            android:gravity="start|top"
+            android:textColor="@color/colorSecundaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/actividad_fecha_ini"
+            app:layout_constraintTop_toBottomOf="@+id/actividad_nombre"
+            tools:text="@string/actividad_descripcion" />
+
+        <TextView
+            android:id="@+id/actividad_fecha_ini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/actividad_fecha_inicio"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/actividad_nombre" />
+
+        <TextView
+            android:id="@+id/actividad_fecha_fin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/actividad_fecha_termino"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/actividad_fecha_ini"
+            app:layout_constraintTop_toBottomOf="@+id/actividad_fecha_ini" />
+
+        <TextView
+            android:id="@+id/actividad_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/actividad_area_hint"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/actividad_ver_mas"
+            app:layout_constraintTop_toBottomOf="@+id/actividad_descripcion" />
+
+        <Button
+            android:id="@+id/actividad_ver_mas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:autoLink="web"
+            android:background="@color/colorPrimary"
+            android:linksClickable="true"
+            android:text="@string/actividad_ver_mas"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/white"
+            android:textColorHighlight="#00D12929"
+            android:textSize="12sp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@+id/actividad_exportar_actividad_boton"
+            app:layout_constraintTop_toTopOf="@+id/actividad_area" />
+
+        <ImageButton
+            android:id="@+id/actividad_exportar_actividad_boton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:foreground="@android:drawable/ic_menu_my_calendar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

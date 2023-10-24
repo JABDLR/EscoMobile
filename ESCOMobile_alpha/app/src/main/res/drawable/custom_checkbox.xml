@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <layer-list>
+            <item
+                android:left="5dp"
+                android:right="5dp">
+                <shape>
+                    <corners android:radius="2dp" />
+                    <stroke
+                        android:width="2dp"
+                        android:color="@color/amber_1" />
+                    <gradient android:type="linear"
+                        android:angle="270"
+                        android:startColor="@color/amber_1"
+                        android:centerColor="@color/amber_2"
+                        android:endColor="@color/amber_4"/>
+                    <size
+                        android:width="20dp"
+                        android:height="20dp" />
+                </shape>
+            </item>
+            <!-- Comienza la palomita check -->
+            <item android:left="9dp">
+                <rotate
+                    android:fromDegrees="35"
+                    android:pivotX="-5%"
+                    android:pivotY="-45%">
+                    <shape android:shape="line">
+                        <stroke
+                            android:width="5dp"
+                            android:color="@color/colorPrimary" />
+                    </shape>
+                </rotate>
+            </item>
+            <item>
+                <rotate
+                    android:fromDegrees="-60"
+                    android:pivotX="47%"
+                    android:pivotY="35%">
+                    <shape android:shape="line">
+                        <stroke
+                            android:width="5dp"
+                            android:color="@color/colorPrimary" />
+                    </shape>
+                </rotate>
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_checked="false">
+        <layer-list>
+            <item
+                android:left="5dp"
+                android:right="5dp">
+                <shape>
+                    <corners android:radius="2dp" />
+                    <stroke
+                        android:width="2dp"
+                        android:color="@color/amber_1" />
+                    <size
+                        android:width="20dp"
+                        android:height="20dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

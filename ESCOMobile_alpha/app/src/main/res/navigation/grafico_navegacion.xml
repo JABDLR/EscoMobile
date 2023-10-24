@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grafico_navegacion"
+    app:startDestination="@id/bienvenidaFragment">
+
+    <fragment
+        android:id="@+id/iniciarSesionFragment"
+        android:name="mx.ipn.escom.escomobile.app.vistas.acceso.IniciarSesionFragment"
+        android:label="Iniciar Sesión">
+        <deepLink
+            android:id="@+id/deepLink2"
+            app:uri="iniciarSesion" />
+        <action
+            android:id="@+id/action_iniciarSesionFragment_to_placeholder"
+            app:destination="@id/inicioFragment" />
+        <action
+            android:id="@+id/action_iniciarSesionFragment_to_recuperContrasenaFragment"
+            app:destination="@id/recuperContrasenaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrarUsuarioFragment"
+        android:name="mx.ipn.escom.escomobile.app.vistas.acceso.RegistrarFragment"
+        android:label="Registrate">
+        <deepLink
+            android:id="@+id/deepLink2"
+            app:uri="registrate" />
+    </fragment>
+    <fragment
+        android:id="@+id/bienvenidaFragment"
+        android:name="mx.ipn.escom.escomobile.app.vistas.acceso.BienvenidaFragment"
+        android:label="Bienvenida"
+        android:title="Bienvenido">
+        <action
+            android:id="@+id/action_bienvenidaFragment_to_iniciarSesionFragment"
+            app:destination="@id/iniciarSesionFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_bienvenidaFragment_to_registrarUsuarioFragment"
+            app:destination="@id/registrarUsuarioFragment" />
+        <action
+            android:id="@+id/action_usuario_sin_registrar"
+            app:destination="@id/inicioFragment"
+            app:popUpTo="@+id/bienvenidaFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="androidx.fragment.app.Fragment"
+        android:label="inicio">
+        <argument
+            android:name="usuario"
+            android:defaultValue="null" />
+        <action
+            android:id="@+id/action_inicioFragment_to_mapaFragment"
+            app:destination="@id/mapaFragment" />
+        <action
+            android:id="@+id/action_inicioFragment_to_profesorFragment"
+            app:destination="@id/profesoresFragment" />
+        <action
+            android:id="@+id/action_inicioFragment_to_citasFragment"
+            app:destination="@id/citasFragment" />
+        <action
+            android:id="@+id/action_inicioFragment_to_actividadesFragment"
+            app:destination="@id/actividadesFragment" >
+            <argument android:defaultValue="0"
+                android:name="idEvento" />
+        </action>
+        <action
+            android:id="@+id/action_inicioFragment_to_editarPerfilFragment"
+            app:destination="@id/editarPerfilFragment" />
+        <action
+            android:id="@+id/action_inicioFragment_to_bolsaDeTrabajoFragment"
+            app:destination="@id/bolsaDeTrabajoFragment" />
+        <action
+            android:id="@+id/action_inicioFragment_to_placeholder2"
+            app:destination="@id/enviarComentariosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapaFragment"
+        android:name="androidx.fragment.app.Fragment"
+        android:label="Mapa">
+        <argument
+            android:name="mMarcador"
+            android:defaultValue="null" />
+    </fragment>
+    <fragment
+        android:id="@+id/profesoresFragment"
+        android:name="androidx.fragment.app.Fragment"
+        android:label="Profesores">
+        <action
+            android:id="@+id/action_profesoresFragment_to_perfilProfesor"
+            app:destination="@id/perfilProfesor" />
+    </fragment>
+    <fragment
+        android:id="@+id/citasFragment"
+        android:name="androidx.fragment.app.Fragment"
+        android:label="Citas" />
+    <fragment
+        android:id="@+id/actividadesFragment"
+        android:name="mx.ipn.escom.escomobile.app.vistas.actividad.FragmentListadoActividades"
+        android:label="Actividades">
+        <argument
+            android:name="idEvento"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_actividadesFragment_to_placeholder7"
+            app:destination="@id/exportarACalendarioIntent" />
+        <action
+            android:id="@+id/action_actividadesFragment_to_verMasIntent"
+            app:destination="@id/verMasIntent" />
+        <action
+            android:id="@+id/action_ver_actividades_evento"
+            app:destination="@id/actividadesFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@id/actividadesFragment"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" >
+            <argument android:defaultValue="0"
+                android:name="idEvento" />
+        </action>
+    </fragment>
+    <fragment android:id="@+id/exportarACalendarioIntent" >
+        <argument
+            android:name="eventoCalendario"
+            app:argType="android.content.Intent" />
+    </fragment>
+    <fragment
+        android:id="@+id/perfilProfesor"
+        android:name="androidx.fragment.app.Fragment"
+        android:label="Profesor">
+        <action
+            android:id="@+id/action_perfilProfesor_to_horarioProfesor"
+            app:destination="@id/horarioProfesor" />
+        <action
+            android:id="@+id/action_perfilProfesor_to_estadisticasProfesor3"
+            app:destination="@id/estadisticasProfesor" />
+        <action
+            android:id="@+id/action_perfilProfesor_to_evaluarProfesor"
+            app:destination="@id/evaluarProfesor" />
+        <argument
+            android:name="idProfesor"
+            android:defaultValue="null" />
+    </fragment>
+    <fragment
+        android:id="@+id/horarioProfesor"
+        android:name="androidx.fragment.app.Fragment"
+        android:label="horarioProfesor">
+        <argument
+            android:name="idProfesor"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/estadisticasProfesor"
+        android:name="androidx.fragment.app.Fragment"
+        android:label="Estadisticas">
+        <argument
+            android:name="idProfesor"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/evaluarProfesor"
+        android:name="androidx.fragment.app.Fragment"
+        android:label="Evaluar">
+        <argument
+            android:name="idProfesor"
+            android:defaultValue="0" />
+        <argument
+            android:name="idAlumno"
+            android:defaultValue="0" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_poner_marcador_mapa"
+        app:destination="@id/mapaFragment"
+        app:enterAnim="@anim/nav_default_pop_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_exit_anim" />
+    <fragment
+        android:id="@+id/editarPerfilFragment"
+        android:name="androidx.fragment.app.Fragment"
+        android:label="Editar Perfil">
+        <argument android:name="idUsuario" />
+        <action
+            android:id="@+id/action_editarPerfilFragment_to_recuperContrasenaFragment"
+            app:destination="@id/recuperContrasenaFragment" />
+        <action
+            android:id="@+id/action_editarPerfilFragment_to_editarPerfilProfesor"
+            app:destination="@id/editarPerfilProfesor" />
+    </fragment>
+    <fragment
+        android:id="@+id/recuperContrasenaFragment"
+        android:name="androidx.fragment.app.Fragment"
+        android:label="recuperarContrasena" >
+        <argument android:name="idUsuario" />
+    </fragment>
+    <fragment
+        android:id="@+id/editarPerfilProfesor"
+        android:name="androidx.fragment.app.Fragment" >
+        <argument android:name="idProfesor" />
+    </fragment>
+    <fragment android:id="@+id/verMasIntent" >
+        <argument
+            android:name="url"
+            app:argType="android.content.Intent" />
+    </fragment>
+    <fragment
+        android:id="@+id/bolsaDeTrabajoFragment"
+        android:name="androidx.fragment.app.Fragment"
+        android:label="Bolsa De Trabajo" />
+    <fragment
+        android:id="@+id/enviarComentariosFragment"
+        android:name="androidx.fragment.app.Fragment"
+        android:label="enviarComentariosFragment" >
+        <argument
+            android:name="urlForm"
+            app:argType="string"
+            android:defaultValue='"https://google.com"' />
+    </fragment>
+    <action android:id="@+id/action_global_enviarComentariosFragment" app:destination="@id/enviarComentariosFragment" />
+    <action
+        android:id="@+id/action_global_bienvenidaFragment_cerrarSesion"
+        app:destination="@id/bienvenidaFragment"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim"
+        app:popUpTo="@+id/bienvenidaFragment" />
+    <fragment
+        android:id="@+id/vistaVaciaFragment"
+        android:name="mx.ipn.escom.escomobile.app.vistas.auxiliares.VistaVaciaFragment"
+        android:label="fragment_vista_vacia"
+        tools:layout="@layout/fragment_vista_vacia" >
+        <argument
+            android:name="mensaje"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='"Cargando.."' />
+    </fragment>
+    <action
+        android:id="@+id/action_global_vistaVaciaFragment"
+        app:destination="@id/vistaVaciaFragment"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim" >
+        <argument android:defaultValue="Vacia"
+            android:name="mensaje" />
+    </action>
+</navigation>

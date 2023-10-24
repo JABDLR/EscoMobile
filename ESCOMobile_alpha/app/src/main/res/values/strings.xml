@@ -1,0 +1,259 @@
+<resources>
+    <string name="txt_main_name">ESCOMobile</string>
+    <string name="img_main_logo_desc">Logo de ESCOM</string>
+    <string name="btn_registrarse">Registrarse</string>
+    <string name="btn_iniciar_sesion">Iniciar sesión</string>
+    <string name="btn_continuar_sin_registro">Continuar sin registrarse</string>
+
+	<string name="txt_main_iniciarsesion">Inicia sesión</string>
+
+	<string name="txt_main_registrarusuario">Registrate</string>
+
+    <!-- TODO: Nombre de actividades -->
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_registro">ESCOMobile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="map_request_denied">Lo sentimos, no podemos acceder a tu ubicación.</string>
+    <string name="btn_planta_baja">PB</string>
+    <string name="btn_segundo_piso">P2</string>
+    <string name="btn_primer_piso">P1</string>
+    <string name="txt_hint_primer_ap">Apellido Paterno</string>
+    <string name="txt_hint_nombre">Nombre</string>
+    <string name="txt_hint_boleta_empleado">Boleta / # Empleado</string>
+    <string name="txt_hint_rfc">RFC</string>
+    <string name="txt_hint_segundo_ap">Apellido Materno</string>
+    <string name="txt_hint_mail">Correo electrónico</string>
+    <string name="txt_hint_pass">Contraseña</string>
+    <string name="txt_desc_pass">Mínimo 8 caractéres, una mayúscula, una minúscula, un número y un caractér especial: !@#$%^*&#38;</string>
+    <string name="lbl_contrasenia">Contraseña</string>
+    <string name="txt_contrasenia_cambio">Por su seguridad: para cambiar la contraseña favor de ir a recuperar contraseña aquí!</string>
+    <string name="txt_hint_pass2">Repite tu contraseña</string>
+    <string name="lbl_iniciar_como_profesor">Iniciar sesión como profesor</string>
+    <string name="lbl_condiciones">He leído y acepto términos y condiciones</string>
+    <string name="lbl_registrarse">Registrarse</string>
+    <string name="lbl_guardar_cambios">Guardar cambios</string>
+    <string name="lbl_ya_tiene_cuenta">¿Ya tienes una cuenta? ¡Entra!</string>
+    <string name="txt_sin_cuenta_registrate">¿No tienes una cuenta? ¡Registrate!</string>
+    <string name="txt_olvide_pass">Olvidé mi contraseña</string>
+    <string name="btn_ingresar">Ingresar</string>
+    <string name="btn_recuperar">Recuperar contraseña</string>
+
+    <!-- TODO: Menú -->
+    <string name="dmenu_dashboard">Menucito principal</string>
+    <string name="dmenu_ver_mapa">Ver mapa</string>
+    <string name="dmenu_eventos">Eventos</string>
+    <string name="dmenu_citas">Citas</string>
+    <string name="dmenu_profesor">Profesores</string>
+    <string name="dmenu_bolsa_de_trabajo">Bolsa de trabajo</string>
+    <string name="dmenu_editar_perifl">Modificar información</string>
+    <string name="dmenu_cerrar_sesion">Cerrar sesión</string>
+    <string name="dmenu_borar_cuenta">Eliminar cuenta</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title_activity_manager">ManagerActivity</string>
+    <string name="nav_header_title">Jhon Lennon</string>
+    <string name="nav_header_subtitle">thebeatles@gmail.com.uk</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Buscar profesor</string>
+    <string name="txt_hint_nombre_empresa">Nombre empresa</string>
+    <string name="txt_hint_puesto">Arquitecto de software</string>
+    <string name="txt_hint_sueldo">Sueldo: $45, 000</string>
+    <string name="txt_hint_logo_empresa">logo empresa</string>
+    <string name="txt_hint_horario">Horario:</string>
+    <string name="txt_hint_horario2">Horario</string>
+    <string name="txt_hint_hora">L -V 9:00:00 a 18:00:00 hrs</string>
+    <string name="txt_hint_prestaciones">Prestaciones:</string>
+    <string name="txt_hint_requisitos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper tellus vestibulum congue ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus venenatis nibh a ligula porta, congue ultricies nisi tincidunt. Etiam sit amet sem velit. Vivamus ac molestie lacus. Phasellus luctus eros in ultricies dignissim. Nunc fermentum tincidunt risus accumsan congue. Aliquam eu augue aliquet, cursus metus sed, finibus nibh. Sed ac felis efficitur, tempor elit id, iaculis magna. Vestibulum placerat mollis erat et pharetra. Ut eu neque mauris. Phasellus consequat justo eget euismod ultrices. Morbi dictum, nibh in feugiat egestas, orci ligula ultrices urna, et gravida lacus justo tempus turpis. Duis cursus sagittis ipsum, ac varius nunc.</string>
+    <string name="txt_hint_contacto">Contacto:</string>
+    <string name="txt_hint_medio_contacto">correo: escomobile@outlook.com teléfono: 5545542343</string>
+    <string name="preferences_login_key">com.example.master.escomobile.PREFERENCES_LOGIN</string>
+
+    <string name="hint_profesores">profesores</string>
+    <string name="hint_grupos">grupos</string>
+    <string name="hint_salones">salones</string>
+    <string name="hint_academias">academias</string>
+    <string name="hint_progress_bar">Espera un momento</string>
+    <string name="txt_hint_calificar">Calificar</string>
+    <string name="txt_hint_cita">Solicitar cita</string>
+    <string name="btn_desc_horario_profesor">Horario</string>
+    <string name="btn_desc_estadisticas">Estadisticas</string>
+    <string name="btn_desc_ubicar_mapa">Ubicar en mapa</string>
+    <string name="img_desc_foto_profesor">foto de profesor</string>
+    <string name="txt_perfil_profesor">Perfil de profesor</string>
+    <string name="txt_profesor_de_escom">Profesor de ESCOM</string>
+    <string name="txt_comentarios_sobre_el_profesor">Comentarios sobre el profesor</string>
+    <string name="txt_hint_opinion">Danos tu opinión acerca del desempeño académico del profesor. Los campos marcados con * son obligatorios.</string>
+    <string name="txt_puntuacion">* Tu puntuación</string>
+    <string name="txt_hint_comentario">Comentario</string>
+    <string name="txt_hint__solicitar_cita">Completa los siguientes campos para solicitar agendar tu cita.\nÚnicamente podrás agendar una cita con aquellos profesores que se hayan registrado en la aplicación.</string>
+    <string name="txt_hint_solicitar_cita">
+		Gracias por usar el sistema de citas de ESCOMobile.\n
+		Para comenzar a disfrutar de este beneficio con tus profesores debes saber que:\n
+		1) Debes introducir todos los campos desplegados en la pantalla.\n
+		2) Para poder agendar una cita con algún profesor, éste debe de estar registrado (tener una cuenta) en el sistema, de lo contrario no podrás solicitar agendar con él.\n
+		3) Los profesores que encontrarás para seleccionar en este apartado son solo aquellos que se encuentran registrados. La lista se actualiza periódicamente para brindarte más posibilidades en caso de haber nuevos registros.\n
+		4) Debes expresar a tu profesor un motivo por el cual deseas obtener la cita, éste será leído por tu profesor y le ayudará a decidir sobre aceptar o no tu cita.\n
+		5) Tu nombre puede ser consultado por tu profesor cuando solicitas agendar una cita.\n
+		6) La desición de tu profesor sobre la cita es única y personal, puede depender, entre otras cosas, de asuntos personales o de tiempo.\n
+		7) El lugar en el que se desempeña la cita es por defecto el cubículo del profesor.\n
+		8) Una vez solicitada la cita, no podrás modificar la información introducida\n
+		9) La puede ser cancelada (por ti o el profesor) antes de que ésta sea aprobada o rechazada, incluso una ves aprobada podrá se podrá cancelar, siempre y cuando falten más de dos hora para que llegue el tiempo propuesto.\n
+		10) El cualquiera de los casos, a la hora de solicitar agendar una cita, cuando ésta es aceptada, rechazada o cancelada se te notificará al respecto, o bien al profesor en caso de ser tú quien cancela.\n
+		11) Puedes solicitar agendar más citas con el mismo u otros profesores registradas, y el que éstas se acepten o rechacen no afecta para nada en el cómo usas la app, a tu información o tu perfil. \n
+		12) El uso que le des al apartado es tu responsabilidad, úsalo con respeto. \n
+	</string>
+    <string name="btn_hint_acpetar">Aceptar</string>
+    <string name="txt_hint_motivo_cota">Motivo de la cita</string>
+    <string name="img_description">imagen</string>
+    <string name="txt_tipo_cita">Tipo de cita</string>
+    <string name="txt_hora_cita">Hora de la cita</string>
+    <string name="txt_fecha_cita">Fecha de la cita</string>
+    // Terminos y condiciones se podría presentar de otra manera
+    <string name="txt_terminos_condiciones">
+		<b>Términos y condiciones de uso de la aplicación Móvil ESCOMobile.\n\n
+		AL ACCEDER Y UTILIZAR ESCOMobile, USTED ACEPTA Y ACCEDE A ESTAR OBLIGADO POR LOS TÉRMINOS Y
+		DISPOSICIONES DE ESTE ACUERDO. ASIMISMO, AL UTILIZAR ESTOS SERVICIOS PARTICULARES, USTED
+		ESTARÁ SUJETO A TODA REGLA O GUÍA DE USO CORRESPONDIENTE QUE SE HAYA PUBLICADO PARA DICHOS
+		SERVICIOS. TODA PARTICIPACIÓN EN ESTE SERVICIO CONSTITUIRÁ LA ACEPTACIÓN DE ESTE ACUERDO.
+		SI NO ACEPTA CUMPLIR CON LO ANTERIOR, POR FAVOR, NO LO UTILICE.</b>\n\n
+		ESCOMobile pretende facilitar información de los profesores de la Escuela Superior de
+		Cómputo (ESCOM), los horarios de éstos, así como sus salones; información de las ofertas de
+		trabajo publicadas por la Bolsa de Trabajo ESCOM, mostrar un mapa de la escuela con la
+		distribución de sus áreas, edificios, plantas, salones, entre otros a los alumnos y
+		profesores de la ESCOM registrados en el sistema.\n
+		<b>Aviso de Privacidad.</b>\n
+		ESCOMobile cree que la privacidad es importante para el éxito y el uso de las aplicaciones
+		móviles. Esta declaración establece la política de ESCOMobile y describe las prácticas que
+		seguiremos con respecto a la privacidad de la información de los usuarios de esta app.
+		Si tiene alguna pregunta sobre esta política o sobre nuestras prácticas, envíe un correo
+		electrónico, también puede llamarnos al 5582404115.\n
+		A continuación establecemos la forma en que la aplicación recopila, trabaja y muestra la
+		información requerida para brindar el servicio ofrecido a los usuario de la aplicación
+		registrada.\n
+		<b>Qué información personal de alumnos y profesores recopilamos.</b>\n
+		ESCOMobile recopila su información personal cuando usted voluntariamente nos la proporciona.
+		Si elige registrarse, le pedimos que proporcione información personal limitada, como su
+		nombre y apellidos, número de boleta o empleado (según sea el caso), correo electrónico.
+		También recopilamos información que le permitirá establecer una contraseña para poder
+		acceder al sistema y brindarme mayor seguridad a sus datos al hacerlo.\n
+		<b>Cómo revisar y cambiar su información personal.</b>\n
+		Si se registra en una cuenta de ESCOMobile, puede revisar y cambiar su información personal
+		iniciando sesión en la aplicación de ESCOMobile, luego seleccionando la opción
+		\"Modificar información\" del menú hamburger (deslizable de lado izquierdo a derecho de la
+		pantalla inicial de ESCOMobile en su smartphone). La información que estará disponible para
+		edición y actualización es la referente al correo y la contraseña. Asimismo, se brinda
+		ahora la posibilidad de subir una foto de a su cuenta para mayor distinción y
+		caracterización de la misma para con usted, éste último atributo no es obligatorio y puede
+		ser cambiado siempre que su cuenta exista y esté disponible.\n
+		<b>Cómo utilizamos la información personal que recopilamos.</b>\n
+		Usos internos\n
+		Podemos utilizar su información personal en ESCOMobile:\n(1) para proporcionarle los
+		servicios de consulta de información sobre la ESCOM y sus profesores como lo son el mapa 2D
+		presentado en la aplicación que muestra áreas académicas dentro de la misma, perfiles de los
+		profesores del plantel con su información asociada (nombre, fotografía, academia,
+		estadísticas, etc), así como sus horarios y cubículos asociados a éstos, y ofertas de
+		trabajo correspondientes a la Bolsa de Trabajo ESCOM;\n(2) para publicar y consultar
+		calificaciones y comentarios otorgados a los profesores por parte de los alumnos registrados
+		en el sistema; y \n(3) para generar y atender citas solicitadas por los alumnos hacia los
+		profesores, con el objetivo de resolver dudas sobre las actividades académicas propuestas en
+		el plantel.\n
+		<b>Divulgación de información personal a terceros</b>\n
+		No divulgaremos ningún tipo de información personal a ningún tercero (excluyendo a nuestros
+		contratistas a quienes podemos proporcionar dicha información para el propósito limitado de
+		brindarnos servicios y quienes están obligados a mantener la información confidencial), a
+		menos que (1) nos haya autorizado. para hacerlo; (2) estamos legalmente obligados a hacerlo,
+		por ejemplo, en respuesta a una citación, orden judicial u otro proceso legal y / o, (3) es
+		necesario para proteger nuestros derechos de propiedad relacionados con esta aplicación
+		móvil. También podemos compartir información agregada no personal sobre el uso de la app con
+		terceros no afiliados. Esta información global no contiene ninguna información personal
+		sobre nuestros usuarios.\n
+		<b>Cómo protegemos la información en ESCOMobile.</b>\n
+		Ejercemos gran cuidado para proteger su información personal. Esto incluye, entre otras
+		cosas, el uso de técnicas estándar de la industria, como firewalls, cifrado y detección de
+		intrusos. Como resultado, aunque nos esforzamos por proteger su información personal, no
+		podemos garantizar ni garantizar la seguridad de la información que nos transmita o reciba
+		de nosotros.\n
+		Además, limitamos el acceso del equipo detrás de ESCOMobile a la información personal. Solo
+		ellos y allegados legales pueden tenern acceso a esta información. Educamos a nuestro
+		personal sobre la importancia de mantener la confidencialidad de la información de los
+		usuarios.\n
+		Revisamos nuestras disposiciones de seguridad de vez en cuando según lo consideremos
+		apropiado.\n
+		<b>¿Cómo puede ayudar a proteger su información?</b>\n
+		Si está utilizando una cuenta de ESCOMoible para el cual se registró y elige una contraseña,
+		le recomendamos que no divulgue su contraseña a nadie. Nunca le pediremos su contraseña en
+		una llamada telefónica no solicitada o en un correo electrónico no solicitado. Esto es
+		para asegurar que otros no puedan acceder a su información personal.\n
+		<b>Acerca de la información que ESCOMobile facilita a los usuarios.</b>\n
+		La información, de todo tipo, que en ESCOMobile y sus componentes se ofrece es únicamente
+		con fines informativos; esta aplicación y el equipo detrás no se hacen responsables de la
+		exactitud, utilidad o disponibilidad de cualquier información que se transmita o ponga a
+		disposición a través de la misma; no será responsable por cualquier error u omisión en dicha
+		información. Este tipo de disposición te ayudará a evitar responsabilidad en caso de que un
+		usuario se base en tu información y eso cause un problema.\n
+		<b>Sobre contenido propio y propiedad intelectual del mismo.</b>\n
+		La aplicación y su contenido original, las características y la funcionalidad son propiedad
+		de los ciudadanos <b><i>Fernández Quiñones Isaac, Huerta Martínez Jesús Manuel, Luna Benoso
+		Benjamín, Pérez García José David y Vélez Saldaña Ulises</i></b> equipo detrás de ESCOMobile
+		y están protegidos por derechos de autor internacionales, marcas registradas, patentes,
+		secretos comerciales y demás leyes de propiedad intelectual o de derechos de propiedad.\n
+		<b>Sobre la cancelación del servicio.</b>\n
+		Es necesario informar que se cuentan con dos posibles formas de la cancelación del servicio
+		en la aplicación. (1) Voluntariamente, pues no desea continuar gozando del servicio y de las
+		características que éste le otorga, para ello seleccione la opción “Eliminar cuenta” del
+		menú hamburger (deslizable de lado izquierdo a derecho de la pantalla inicial de ESCOMobile
+		en su smartphone); y (2) podemos cancelar su acceso a la aplicación, sin causa o aviso, lo
+		cual podrá resultar en la incautación y destrucción de toda la información que esté asociada
+		con su cuenta. Todas las disposiciones de este acuerdo que, por su naturaleza, deban
+		sobrevivir a la cancelación sobrevivirán a ella, incluyendo sin limitación, las
+		disposiciones de propiedad, renuncias de garantía, indemnización y limitaciones de
+		responsabilidad.\n
+		Se debe mencionar, además, que son los alumnos aquellos que pueden eliminar su información
+		(o en su defecto, cuya información es eliminada), pues la información de los profesores
+		depende del Instituto Politécnico Nacional (IPN) de la propia ESCOM. En caso no querer
+		continuar con su cuenta, el profesor registrado podrá elegir eliminarla, logrando no poder
+		hacer más citas con él ni poder consultar su fotografía, pero la información estrictamente
+		proporcionada por la ESCOM e IPN será aún accesible por los usuarios registrados.
+		ESCOMobile y su equipo se reserva el derecho de modificar estas condiciones de vez en cuando
+		según lo considere oportuno; asimismo, el uso permanente de la aplicación significará su
+		aceptación de cualquier ajuste a tales términos. Si hay algún cambio en nuestra política de
+		privacidad, anunciaremos la propia app, en su pantalla principal al ingresar que se han
+		hecho tales cambios. Si hay algún cambio en respecto a la manera en que usamos la
+		información de identificación personal de nuestros usuarios, enviaremos una notificación por
+		correo electrónico o correo postal a aquellos que sean afectados por el cambio. Todo cambio
+		en nuestra política de privacidad se publicará en la aplicación 30 días antes de que tales
+		cambios ocurran. Por lo tanto, se le recomienda volver a leer esta declaración de manera
+		regular.
+	</string>
+    <string name="action_help">Ayuda</string>
+    <string name="txt_hint_estadisticas">Estadísticas</string>
+    <string name="txt_hint_ubicar_mapa">Ubicar en mapa</string>
+    <string name="hint_evento_nombre">Nombre del Evento</string>
+    <string name="evento_fecha_inicio">01/08/2019 08:00</string>
+    <string name="evento_fecha_termino">01/08/2019 22:00</string>
+    <string name="hint_fecha_inicio">Inicia:</string>
+    <string name="hint_fecha_termino">Termina:</string>
+    <string name="dmenu_actividades">Actividades</string>
+    <string name="hint_actividad_nombre">Nombre de la actividad</string>
+    <string name="actividad_fecha_inicio">10:00</string>
+    <string name="actividad_fecha_termino">12:00</string>
+    <string name="actividad_lugar">Sede:</string>
+    <string name="actividad_descripcion">Descripción de la actividad.\nDescripción de la actividad.</string>
+    <string name="actividad_area_hint">Auditorio</string>
+    <string name="actividad_ver_mas">Ver más</string>
+    <string name="nav_title_envia_tus_comentarios">Envia tus comentarios</string>
+    <string name="fechaSeparadorEjemplo">Jueves 10, Agosto</string>
+    <string-array name="tipoCita">
+        <item>Asesoría</item>
+        <item>Revisión de proyecto</item>
+        <item>Revisión de TT</item>
+        <item>Entrega de tarea</item>
+        <item>Entrega de proyecto</item>
+        <item>Revisión de protocolo</item>
+        <item>Presentar idea de TT</item>
+        <item>Otro</item>
+    </string-array>
+</resources>

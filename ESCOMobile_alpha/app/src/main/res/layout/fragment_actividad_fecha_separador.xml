@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools">
+
+<data>
+    <variable
+        name="fecha"
+        type="java.util.Date" />
+</data>
+
+    <LinearLayout
+            android:id="@+id/actividad_header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/actividad_item_fecha_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/actividad_item_fecha"
+                    style="@style/headerItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    tools:text="@string/fechaSeparadorEjemplo" />
+            </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</layout>

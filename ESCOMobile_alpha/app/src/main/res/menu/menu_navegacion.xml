@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navView">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/actividadesFragment"
+            android:icon="@drawable/ic_menu_event"
+            android:title="@string/dmenu_actividades" />
+        <item
+            android:id="@+id/mapaFragment"
+            android:icon="@drawable/ic_menu_map"
+            android:title="@string/dmenu_ver_mapa" />
+        <item
+            android:id="@+id/profesoresFragment"
+            android:icon="@drawable/ic_menu_profesor"
+            android:title="@string/dmenu_profesor" />
+        <item
+            android:id="@+id/citasFragment"
+            android:icon="@drawable/ic_menu_cita"
+            android:title="@string/dmenu_citas" />
+        <item
+            android:id="@+id/bolsaDeTrabajoFragment"
+            android:icon="@drawable/ic_menu_trabajo"
+            android:title="@string/dmenu_bolsa_de_trabajo" />
+
+    </group>
+
+    <item
+        android:id="@+id/navigation_subheader"
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/editarPerfilFragment"
+                android:icon="@drawable/ic_menu_editar_perfil"
+                android:title="@string/dmenu_editar_perifl" />
+            <item
+                android:id="@+id/action_global_bienvenidaFragment_cerrarSesion"
+                android:icon="@drawable/ic_menu_cerrar_sesion"
+                android:title="@string/dmenu_cerrar_sesion" />
+            <item
+                android:id="@+id/action_global_enviarComentariosFragment"
+                android:icon="@android:drawable/ic_dialog_email"
+                    android:title="@string/nav_title_envia_tus_comentarios" />
+        </menu>
+    </item>
+</menu>
